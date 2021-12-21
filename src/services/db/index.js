@@ -7,7 +7,9 @@ import Dexie from 'dexie';
 // DB Initialization
 export const db = new Dexie('AgPro');
 db.version(0.1).stores({
-   projectConfig: '++id'
+   projects: '&projectId',
+   sprints: '&sprintId, projectId',
+   tasks: '&taskId, sprintId, projectId'
 });
 
 // Generic DB Methods
