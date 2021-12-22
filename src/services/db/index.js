@@ -12,18 +12,5 @@ db.version(0.1).stores({
    tasks: '&taskId, sprintId, projectId'
 });
 
-// Generic DB Methods
-export function addEntryToStore(storeName, dataObj) {
-   db[storeName]?.add(dataObj);
-}
-
-export function getEntryFromStore(storeName) {
-
-}
-
-export function removeEntryFromStore(storeName) {
-
-}
-
 
 
