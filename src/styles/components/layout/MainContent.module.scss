@@ -1,0 +1,15 @@
+.mainContentLayout {
+   height: 100%;
+   width: 100%;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+.sideDrawer {
+   height: 100%;
+   width: 200px;
+}
+.mainContent {
+   height: 100%;
+   width: calc(100% - 300px);
+}

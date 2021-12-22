@@ -1,0 +1,10 @@
+.headerLayout {
+   display: block;
+   height: 60px;
+   width: 100%;
+}
+.bodyLayout {
+   display: block;
+   height: calc(100% - 60px);
+   width: 100%;
+}

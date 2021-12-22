@@ -3,17 +3,17 @@ import React, { Fragment } from "react";
 import Header from "./components/layout/Header";
 import MainContent from "./components/layout/MainContent";
 // styles
-// import styles from "./styles/App.module.scss";
+import styles from "./styles/App.module.scss";
 // services
 
 export default function App() {
 
    return (
       <Fragment>
-         <header>
+         <header className={styles.headerLayout}>
             <Header />
          </header>
-         <section>
+         <section className={styles.bodyLayout}>
             <MainContent />
          </section>
       </Fragment>
