@@ -13,9 +13,22 @@
    display: flex;
    gap: 15px;
    justify-content: flex-start;
+   cursor: pointer;
    h1 {
+      transition: color 150ms linear;
       color: $FontThemeColor;
-      font-size: 32px;
+      font-size: 30px;
+   }
+   img {
+      transition: transform 150ms linear;
+   }
+   &:hover {
+      h1 {
+         color: $HoverFontThemeColor;
+      }
+      > img {
+         transform: scale(1.1);
+      }
    }
 }
 .menuContainer {
@@ -30,10 +43,28 @@
       display: flex;
       align-items: center;
    }
-   button {
+   > button {
       background: transparent;
       border: none;
       margin-right: 15px;
+      cursor: pointer;
+   }
+}
+.taskButton {
+   margin-left: 30px;
+   padding: 8px 12px;
+   font-size: 16px;
+   color: #ffffff;
+   font-family: Lato;
+   font-weight: 500;
+   border: none;
+   border-radius: 8px;
+   background-color: $FontThemeColor;
+   transition: all 150ms linear;
+   cursor: pointer;
+   &:hover {
+      background-color: $HoverFontThemeColor;
+      transform: scale(1.02);
    }
 }
 .settingIcon {
@@ -48,6 +79,14 @@
    position: relative;
    display: flex;
    align-items: center;
+   cursor: pointer;
+   h1 {
+      font-size: 20px;
+      transition: transform 200ms linear;
+   }
+   h1:hover {
+      transform: scale(1.02);
+   }
 }
 .navBottomBar {
    position: absolute;
