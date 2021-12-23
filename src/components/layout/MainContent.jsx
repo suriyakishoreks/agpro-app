@@ -1,6 +1,6 @@
 import React from "react";
 // components
-import SideDrawer from './SideDrawer';
+import SideDrawer from '../ui/SideDrawer';
 // styles
 import styles from '../../styles/components/layout/MainContent.module.scss';
 

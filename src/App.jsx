@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 // components
-import Header from "./components/layout/Header";
+import Header from "./components/ui/Header";
 import MainContent from "./components/layout/MainContent";
 // styles
 import styles from "./styles/App.module.scss";
