@@ -13,6 +13,7 @@
    display: flex;
    gap: 15px;
    justify-content: flex-start;
+   text-decoration: none;
    cursor: pointer;
    h1 {
       transition: color 150ms linear;
@@ -80,11 +81,14 @@
    display: flex;
    align-items: center;
    cursor: pointer;
-   h1 {
-      font-size: 20px;
-      transition: transform 200ms linear;
-   }
-   h1:hover {
+}
+.navLink {
+   font-size: 20px;
+   transition: transform 200ms linear;
+   text-decoration: none;
+   color: #000;
+   font-weight: 700;
+   &:hover {
       transform: scale(1.02);
    }
 }
@@ -95,4 +99,5 @@
    bottom: 0;
    left: 0;
    background-color: $FontThemeColor;
+   transition: width 75ms linear;
 }
