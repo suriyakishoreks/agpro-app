@@ -6,11 +6,14 @@
    justify-content: flex-start;
    align-items: center;
    border-bottom: 1px solid $SupportColor;
+   user-select: none;
 }
 .logoContainer {
    width: $LeftPanelWidth;
    padding: 0px 15px;
-   display: flex;
+}
+.logoLink {
+   display: inline-flex;
    gap: 15px;
    justify-content: flex-start;
    text-decoration: none;

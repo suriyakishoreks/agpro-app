@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 // components
 import Project from "../page/Project";
 // styles
@@ -11,7 +11,7 @@ export default function MainContent() {
       <main className={styles.mainContentLayout}>
          <Routes>
             <Route path="/">
-               <Route index element={<h1>Home</h1>} />
+               <Route index element={<Navigate to="/projects" />} />
                <Route path="projects">
                   <Route index element={<h1>projects</h1>} />
                   <Route path=":projectId" element={<Project />}>
@@ -19,7 +19,7 @@ export default function MainContent() {
                      <Route path="backlog" element={<h1>backlog</h1>} />
                   </Route>
                </Route>
-               <Route path="calendar" element={<h1>calendar</h1>} />
+               <Route path="calendar" element={<Navigate to="/projects" />} />
                <Route path="*" element={<h1>error</h1>} />
             </Route>
          </Routes>

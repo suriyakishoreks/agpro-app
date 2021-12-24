@@ -11,10 +11,12 @@ export default function Header() {
 
    return (
       <div className={styles.headerContainer}>
-         <Link className={styles.logoContainer} to="/">
-            <img src={logo} alt="logo" height="35px" width="35px" />
-            <h1>AgPro</h1>
-         </Link>
+         <div className={styles.logoContainer}>
+            <Link className={styles.logoLink} to="/">
+               <img src={logo} alt="logo" height="35px" width="35px" />
+               <h1>AgPro</h1>
+            </Link>
+         </div>
          <div className={styles.menuContainer}>
             <nav>
                <NavItem title="Projects" route="/projects" active={location?.pathname?.includes('/projects')} />
