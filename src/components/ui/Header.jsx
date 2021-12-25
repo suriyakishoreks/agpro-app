@@ -1,5 +1,7 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
+// components
+import StyledButton from "../ui/StyledButton";
 // styles
 import logo from '../../assets/AgPro.svg';
 import settingIcon from '../../assets/settings.svg';
@@ -21,7 +23,7 @@ export default function Header() {
             <nav>
                <NavItem title="Projects" route="/projects" active={location?.pathname?.includes('/projects')} />
                <NavItem title="Calendar" route="/calendar" active={location?.pathname?.includes('/calendar')} />
-               <button className={styles.taskButton}>Create Task</button>
+               <StyledButton title="Create Task" customStyles={{ marginLeft: '30px' }} />
             </nav>
             <button>
                <img className={styles.settingIcon} src={settingIcon} alt="Settings Icon" height="30px" width="30px" />
