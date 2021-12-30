@@ -11,6 +11,7 @@
    background-color: $FontThemeColor;
    transition: all 150ms linear;
    cursor: pointer;
+   white-space: nowrap;
    &:hover {
       background-color: $HoverFontThemeColor;
       transform: scale(1.02);

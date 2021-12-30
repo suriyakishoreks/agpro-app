@@ -1,0 +1,32 @@
+@use "../../variables" as *;
+
+.projectContainer {
+   width: 100%;
+   padding: 15px;
+   margin: 15px 0;
+   background-color: $CardColor;
+   border-radius: 15px;
+   cursor: pointer;
+   transition: background-color 0.2s ease;
+   > div {
+      display: flex;
+      gap: 50px;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+   }
+   > div h1 {
+      color: $FontThemeColor;
+      font-size: 20px;
+   }
+   > div p span {
+      color: $FontThemeColor;
+      font-weight: 600;
+   }
+   > p {
+      font-weight: 600;
+   }
+   &:hover {
+      background-color: $SupportColor;
+   }
+}
